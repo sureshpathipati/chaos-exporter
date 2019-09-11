@@ -73,8 +73,8 @@ dockerops:
 	@echo "--> Build chaos-exporter image" 
 	@echo "------------------"
 	# Dockerfile available in the repo root
-	sudo docker build . -f Dockerfile -t litmuschaos/chaos-exporter:ci  
-	REPONAME="litmuschaos" IMGNAME="chaos-exporter" IMGTAG="ci" ./buildscripts/push
+	sudo docker build . -f Dockerfile -t litmuschaos/chaos-exporter:0.6  
+	REPONAME="litmuschaos" IMGNAME="chaos-exporter" IMGTAG="0.6" ./buildscripts/push
 
 .PHONY: bdddeps
 bdddeps:

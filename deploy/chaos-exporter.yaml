@@ -19,8 +19,7 @@ spec:
       serviceAccountName: chaos-operator
       containers:
       - name: chaos-exporter
-        #image: ksatchit/sample-chaos-exporter:ci 
-        image: litmuschaos/chaos-exporter:ci 
+        image: litmuschaos/chaos-exporter:0.6 
         imagePullPolicy: Always
         env:
           - name: CHAOSENGINE
